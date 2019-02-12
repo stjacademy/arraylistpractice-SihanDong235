@@ -5,38 +5,35 @@ public class AAL {
 		
 		/*ArrayList <Integer> list = new ArrayList<Integer>();
 		
-		list.add(40);
-		list.add(41);
-		list.add(42);
-		list.set(1, 4);
-		list.add(1, 39);
-		System.out.println(list);
+		list.add(1);
+		list.add(2);
+		list.add(4);
+		list.add(6);
+		list.add(8);
+		list.add(10);
+		list.add(12);
 		
+		for(int i= 0; i < list.size(); i++)
+			list.remove(i); 
 		
-		System.out.println(list.remove(2));
-		System.out.println(list);
+		for(int i=0; i < 4; i++)
+			System.out.print(list.get(i) + " "); 
 		
-		for(int i = 0; i<list.size();i++) {
-			System.out.println(list.get(i));
-		}
-		
-		System.out.println();
-		
-		for(Integer intob : list) {
-			System.out.println(intob);
 		}*/
+		ArrayList band = new ArrayList<String>(); 
 		
-		ArrayList<String> band = new ArrayList<String>();
+		band.add("Paul"); 
+		band.add("Ringo");
+		band.add("John"); 
+		band.add("George"); 
 
-		band.add("Lindsey");
-	  	band.add("Mick");
-		band.add("Stevie");
-		band.add("Peter");
-		band.remove(3);
-		band.set(2, "Christine");
 
-		System.out.println(band);
+		band.add(band.size()-2,band.remove(band.size()-1));
 
+		System.out.print(band); 
+
+
+		
+	}
 				
 	}
-}
