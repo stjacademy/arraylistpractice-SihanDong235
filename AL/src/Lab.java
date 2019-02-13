@@ -8,7 +8,7 @@ public class Lab {
 	  	ArrayList<Integer> n = new ArrayList<Integer>();
 	  	
 	  	for(int i=1; i<=number; i++) {
-	  		if(number%i==0)
+	  		if(number%i==0&&i!=1&&i!=number)
 	  			n.add(i);
 	  	}
 	  	
@@ -31,7 +31,7 @@ public class Lab {
 	  }
 	
 	  public static void main(String[] args) {
-		  ArrayList<Integer> n = getListOfFactors(2);
+		  ArrayList<Integer> n = getListOfFactors(762);
 		  System.out.println(n);
 		  keepOnlyCompositeNumbers(n);
 		  System.out.print(n);
