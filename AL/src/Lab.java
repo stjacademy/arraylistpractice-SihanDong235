@@ -23,7 +23,7 @@ public class Lab {
 		  
 	  	for(int i=0; i<=nums.size()-1; i++) {
 	  		ArrayList<Integer> n = getListOfFactors(nums.get(i));
-	  		if(n.size()<=2) {
+	  		if(n.size()==0) {
 	  			nums.remove(i);
 	  			i--;
 	  		}
@@ -33,6 +33,7 @@ public class Lab {
 	  public static void main(String[] args) {
 		  ArrayList<Integer> n = getListOfFactors(762);
 		  System.out.println(n);
+		  //ArrayList<Integer> nm = {12,12};
 		  keepOnlyCompositeNumbers(n);
 		  System.out.print(n);
 		  
