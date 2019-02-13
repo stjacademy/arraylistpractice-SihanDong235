@@ -20,7 +20,7 @@ public class AAL {
 			System.out.print(list.get(i) + " "); 
 		
 		}*/
-		ArrayList band = new ArrayList<String>(); 
+		ArrayList<String> band = new ArrayList<String>(); 
 		
 		band.add("Paul"); 
 		band.add("Ringo");
@@ -36,6 +36,5 @@ public class AAL {
 		
 	}
 	
-	public
 				
 	}

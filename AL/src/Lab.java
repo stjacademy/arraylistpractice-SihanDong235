@@ -21,9 +21,9 @@ public class Lab {
 	  public static void keepOnlyCompositeNumbers( ArrayList<Integer> nums )
 	  { 
 		  
-	  	for(int i=1; i<=nums.size()-1; i++) {
+	  	for(int i=0; i<=nums.size()-1; i++) {
 	  		ArrayList<Integer> n = getListOfFactors(nums.get(i));
-	  		if(n.size()==2) {
+	  		if(n.size()<=2) {
 	  			nums.remove(i);
 	  			i--;
 	  		}
@@ -31,7 +31,7 @@ public class Lab {
 	  }
 	
 	  public static void main(String[] args) {
-		  ArrayList<Integer> n = getListOfFactors(50);
+		  ArrayList<Integer> n = getListOfFactors(2);
 		  System.out.println(n);
 		  keepOnlyCompositeNumbers(n);
 		  System.out.print(n);
