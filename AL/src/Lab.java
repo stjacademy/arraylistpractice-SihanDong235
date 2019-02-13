@@ -7,7 +7,7 @@ public class Lab {
 	  {                                                                        	
 	  	ArrayList<Integer> n = new ArrayList<Integer>();
 	  	
-	  	for(int i=0; i<=number; i++) {
+	  	for(int i=1; i<=number; i++) {
 	  		if(number%i==0)
 	  			n.add(i);
 	  	}
@@ -15,16 +15,28 @@ public class Lab {
 	  	return n;
 	  }
 	  
+	  
+	  
 	 
-	  public static void keepOnlyCompositeNumbers( List<Integer> nums )
-	  {
-	  	for(Integer ob:nums) {
-	  		for(int i=0; i<=ob; i++) {
-	  			
+	  public static void keepOnlyCompositeNumbers( ArrayList<Integer> nums )
+	  { 
+		  
+	  	for(int i=1; i<=nums.size()-1; i++) {
+	  		ArrayList<Integer> n = getListOfFactors(nums.get(i));
+	  		if(n.size()==2) {
+	  			nums.remove(i);
+	  			i--;
 	  		}
 	  	}
 	  }
 	
+	  public static void main(String[] args) {
+		  ArrayList<Integer> n = getListOfFactors(50);
+		  System.out.println(n);
+		  keepOnlyCompositeNumbers(n);
+		  System.out.print(n);
+		  
+	  }
 
 
 }
